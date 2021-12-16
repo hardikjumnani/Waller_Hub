@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+header{
+    height: 10%;
+    /* background-color: rgb(17, 70, 11); */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.split{
+    height: 80%;
+    width: 33%;
+    position: fixed;
+    top: 10%;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.left{
+    left: 0;
+    /* background-color: rgb(140, 255, 117); */
+    
+}
+
+.middle{
+    top: 40%;
+    height: 20%;
+    left: 33.5%;
+    /* background-color: rgb(163, 241, 255); */
+    /* border-right: 7px solid grey;
+    border-left: 7px solid grey;
+    border-radius: 6px; */
+}
+
+
+.right{
+    right: 0;
+    /* background-color: rgb(255, 167, 167); */
+}
+  
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.login-form-cell, .signup-form-cell{
+    margin-top: 10px;
+}
+
+.error-msg-inactive{
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+.error-msg-active{
+    color: red;
+    font-size: 13px;
+}
+
+input[type=text], input[type=password], input[type=email]{
+    /* border: 1px solid black; */
+    min-width: 100%;
+    max-width: 300px;
+    height: 20px;
+    margin: 3px 0px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=email]:hover{
+    border: 3px;
+}
+
+#visitwall-pagename{
+    width:270px;
+    height: 22px;
+}
+
+.inter-links{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.inter-links:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+input[type=button]{
+    outline:none;
+    font-weight: 400;
+    height: 40px;
+    text-align: center;
+    width: 180px;
+    border-radius:40px;
+    background: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    letter-spacing:1px;
+    text-shadow:0;
+    transition: 0.2s;
+}
+
+input[type=button]:hover{
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 190px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+input[type=button]:active{
+    background-color: rgb(168, 168, 168);
+    height: 43px;
+    width: 185px;
+}

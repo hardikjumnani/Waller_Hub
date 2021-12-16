@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, .full-page, .content-part{
+    height: 100%;
+    width: 100%;
+}
+
+.full-page{
+    padding: 2rem 4rem;
+    z-index: 5;
+    background-color: rgb(255, 0, 0);
+    /* position: relative; */
+}
+
+.content-part{
+    background-color: blue;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.textbox-part{
+    height: 5%;
+    width: 59%;
+    position: relative;
+    top: 90%;
+    left: 20%;
+    background-color: rgb(255, 0, 242);
+}
+
+#textbox-part-tb{
+    height: 100%;
+    width: 88%;
+}
+
+button{
+    height: 100%;
+    width: 12%;
+    background-image: url("send-button.png");
+    background-size: 30% 75%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid red;
+}

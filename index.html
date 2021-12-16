@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waller Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Waller's Hub</h1>
+    </header>
+
+    <main>
+        <div class="log-in split left">
+            <form action="#" class='login-form centered'>
+                <div class="login-form-cell">
+                    <label for="login-username">New Username</label>
+                    <input type="text" name="login" id="login-username">
+                    <p class="error-msg-inactive">Please enter the Username</p>
+                </div>
+
+                <div class="login-form-cell">
+                    <label for="login-nickname">New Wall Name</label>
+                    <input type="text" name="login" id="login-nickname">
+                    <p class="error-msg-inactive">Please enter the Wall Name</p>
+                </div>
+
+                <div class="login-form-cell">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" name="login" id="login-email">
+                    <p class="error-msg-inactive">Please enter your Email Address</p>
+                </div>
+
+                <div class="login-form-cell">
+                    <label for="login-password">New Password</label>
+                    <input type="password" name="login" id="login-password">
+                    <p class="error-msg-inactive">Please enter a Password</p>
+                </div>
+
+                <div class="login-form-cell">
+                    <label for="login-confirm-password">Confirm Password</label>
+                    <input type="password" name="login" id="login-confirm-password">
+                    <p class="error-msg-inactive">Please enter the same Password</p>
+                </div>
+
+                <div class="login-form-cell">
+                    <input type="checkbox" name="login" id="login-agree-TAC">
+                    <label for="login-agree-TAC">Agree To the <a class="inter-links" href="TAC.html">Terms And Conditions</a></label>
+                </div>
+
+                <div class="login-form-cell">
+                    <input type="button" value="Create MY OWN Page">
+                </div>
+            </form>
+        </div>
+
+        <div class="visit-wall split middle">
+            <form action="#" class="visitwall-form centered">
+                <div class="visitwall-form-cell">
+                    <label for="visitwall-pagename">Wall Name</label>
+                    <input type="text" name="visitwall" id="visitwall-pagename">
+                    <p class="error-msg-inactive" id="visitwall-pagename-erempty">Please enter the Wall Name</p>
+                    <p class="error-msg-inactive" id="visitwall-pagename-erinvalid">Incorrect Wall Name</p>
+                </div>
+
+                <div class="visitwall-form-cell">
+                    <input type="button" value="Visit Wall" onclick="myFunction()">
+                </div>
+            </form>
+        </div>
+
+        <div class="sign-up split right">
+            <form action="#" class="signup-form centered">
+                <div class="signup-form-cell">
+                    <label for="signup-username">Username</label>
+                    <input type="text" name="signup" id="signup-username">
+                    <p class="error-msg-inactive">Please enter the Username</p>
+                </div>
+                
+                <div class="signup-form-cell">
+                    <label for="signup-password">Password</label>
+                    <input type="password" name="signup" id="signup-password">
+                    <p class="error-msg-inactive">Please enter the Password</p>
+                </div>
+                
+                <div class="signup-form-cell">
+                    <input type="button" value="Manage My Wall">
+                    <p class="error-msg-inactive">Invalid Username or Password! double check it please</p>
+                </div>
+
+            </form>
+        </div>        
+    </main>
+    <script src="code.js" defer></script>
+</body>
+
+</html>
